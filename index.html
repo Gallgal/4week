@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;500&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<title></title>
 	<style type="text/css">
-		body{margin: 0; background: url("cake.jpg");}
+		body{margin: 0; background-color: black; background: url("cake.jpg"); color: white; font-family: 'IBM Plex Sans KR', sans-serif; text-align: center; font-size: 72pt;}
 
 	</style>
 </head>
@@ -25,13 +26,7 @@
 	 		var mins = Math.floor(myDay / (1000 * 60));
 			var secs = Math.floor(myDay / 1000);
 
-			var y = years;
-			var d = days - years * 365;
- 			var h = hours - days * 24;
- 			var m = mins - hours * 60;
- 			var s = secs - mins * 60;
-
- 			var output = "당신이 태어난지 " + y +"년 " + d + "일 " + h + "시간 " + s + "초 째";
+ 			var output = "당신이 태어난지 " + "<br>" + years +"년 "+ "<br>" + days + "일 " + "<br>" + hours + "시간 " + "<br>" + secs + "초" + "<br>" + "지났습니다.";
  			document.write(output);}
  			setInterval('myTimer()', 1000);
 
