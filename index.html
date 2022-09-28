@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{margin: 0; background: url("cake.jpg");}
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+		myTimer();
+		function myTimer(){
+
+			var birth = Date.parse("sep 1, 2000 09:30:00");
+			var now = new Date();
+			var myDay = now - birth;
+
+			var years = Math.floor(myDay / (1000 * 60 * 60 * 24 * 365));
+			var days = Math.floor(myDay / (1000 * 60 * 60 * 24));
+ 			var hours = Math.floor(myDay / (1000 * 60 * 60));
+	 		var mins = Math.floor(myDay / (1000 * 60));
+			var secs = Math.floor(myDay / 1000);
+
+			var y = years;
+			var d = days - years * 365;
+ 			var h = hours - days * 24;
+ 			var m = mins - hours * 60;
+ 			var s = secs - mins * 60;
+
+ 			var output = "당신이 태어난지 " + y +"년 " + d + "일 " + h + "시간 " + s + "초 째";
+ 			document.write(output);}
+ 			setInterval('myTimer()', 1000);
+
+</script>
+</body>
+</html>
