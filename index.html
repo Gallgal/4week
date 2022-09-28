@@ -27,7 +27,7 @@
 			var secs = Math.floor(myDay / 1000);
 
  			var output = "당신이 태어난지 " + "<br>" + years +"년 "+ "<br>" + days + "일 " + "<br>" + hours + "시간 " + "<br>" + secs + "초" + "<br>" + "지났습니다.";
- 			document.write(output);}
+ 			document.body.innerHTML = output;}
  			setInterval('myTimer()', 1000);
 
 </script>
